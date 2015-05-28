@@ -23,7 +23,7 @@ namespace Snake
         static void Main(string[] args)
         {
             end:
-            Console.Title = "SNAKE - MADE BY MARTIN NIKOLOV";
+            Console.Title = "SNAKE - QUANG TRAN";
 
             //Set Console's Windows Sizes
             Console.WindowHeight = 25;
@@ -61,7 +61,7 @@ namespace Snake
             //Print food on the Console
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.SetCursorPosition(food.col, food.row);
-            Console.Write("@");
+            Console.Write("Q");
             Console.ResetColor();
 
             //Rock
@@ -160,10 +160,10 @@ namespace Snake
                     Console.ForegroundColor = ConsoleColor.Black;
                     Console.BackgroundColor = ConsoleColor.White;
                     Console.SetCursorPosition(0, 0);
-                    Console.WriteLine("GAME OVER!" + "\n" + "Your points are {0}!", (snakeElements.Count - 5) * 100);
+                    Console.WriteLine("TRO CHOI KET THUC!" + "\n" + "Diem cua ban: {0}!", (snakeElements.Count - 5) * 100);
 
                     Console.SetCursorPosition(10, 11);
-                    Console.WriteLine("Press [SPACE] for new game...");
+                    Console.WriteLine("Click [SPACE] de choi lai...");
 
                     Console.SetCursorPosition(0, Console.WindowHeight - 1);
                     ConsoleKeyInfo userKeyInput = Console.ReadKey();
@@ -203,7 +203,7 @@ namespace Snake
                     //Print food on the Console
                     Console.ForegroundColor = ConsoleColor.Cyan;
                     Console.SetCursorPosition(food.col, food.row);
-                    Console.Write("@");
+                    Console.Write("Q");
                     Console.ResetColor();
 
                     int fiftyFifty = randomNumberGenerator.Next(1, 3);
@@ -304,7 +304,7 @@ namespace Snake
                 //Always show the food
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.SetCursorPosition(food.col, food.row);
-                Console.Write("@");
+                Console.Write("Q");
                 Console.ResetColor();
 
                 speedIncreaser = speedIncreaser - 0.025;
